@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webapplication</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "style", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "stylenew", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "responsive", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "font-awesome.min", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%#= render 'shared/header' %>
+    <%#= render 'shared/footer' %>
+    <%= yield %>
+  </body>
+</html>
